@@ -1,0 +1,470 @@
+/*nav strat*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+.nav{
+    height: 100px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6); /* ظل أكثر وضوحًا */
+    transition: box-shadow 0.3s ease;
+    position: relative;
+   
+  
+}
+.nav.fixed {
+    position: fixed; /* التثبيت عندما يتم التمرير */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* الخلفية تصبح بيضاء عند التمرير */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* ظل أقل وضوحًا عند التثبيت */
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
+    margin-top:20px;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    font-style:oblique;
+}
+.one i{
+  margin-top:2px;  
+  font-size: 30px;
+  color:#D4AF37;
+}
+
+.tow{
+    display: flex;
+    justify-content: space-between;
+    gap:30px; 
+    margin-top:20px; 
+    font-family: "Poppins", sans-serif;
+    font-size:20px;
+}
+.home{
+    color:#D4AF37; 
+}
+.P , .A ,.C{
+    color:black;
+}
+
+.three{
+    display: flex;
+    justify-content: space-between;
+    gap:35px;
+    margin-top:20px;
+   
+    
+}
+.three button{
+    width:110px;
+    height: 35px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size:15px;
+}
+.one1{
+    background-color: white;
+    color: #D4AF37;
+  }
+  .tow1{
+      background-color:#D4AF37;
+      color:white;
+  }
+
+  .one1:hover {
+    background-color: #D4AF37;
+    color: white;
+    cursor: pointer;
+}
+
+.tow1:hover {
+    background-color: white;
+    color: #D4AF37;
+    cursor: pointer;
+}
+
+
+/*end nav*/
+
+/*start Home1*/
+.Home1 {
+    background: url("../image/mod.jpg");
+    height: 800px;
+    background-size: cover;
+   
+   
+    
+}
+.Home1 h2{
+    padding-top: 130px;
+    font-family: "Poppins", sans-serif;
+    font-size:40px;
+    font-family: 'Pacifico', cursive;
+    color:white;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000;
+    
+}
+.Home1 address{
+    padding-top: 150px;
+    padding-left: 400px;
+    font-size:140px;
+    color:white;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000;
+    
+}
+.Home1 p{
+    padding-top: 100px;
+    padding-left: 300px;
+    font-size:30px;
+    text-shadow: 2px 2px 4px #FFFFFF, -2px -2px 4px #FFFFFF;
+
+    color:rgb(0, 0, 0);
+}
+
+
+/*End Home1*/
+
+/*Product start*/
+.pagination{
+    display: flex;
+    list-style-type: none;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.pagination a{
+    text-decoration: none;
+}
+
+.Product{
+    height: 700px;
+    background-color: white;
+
+}
+.Product address{
+    margin-top:100px;
+    color: #D4AF37;
+    font-size:100px;
+   padding-left: 400px;
+   text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000;
+    font-family: 'Dancing Script', cursive;
+}
+.product{
+    height: 400px;
+   
+}
+.categories{
+    margin-top: 80px;
+}
+.category h2{
+    font-size:30px;
+    color:black;
+}
+.category h2:hover{
+   
+    text-decoration: underline;
+    text-decoration-color: #D4AF37; 
+    cursor: pointer;
+    text-underline-offset: 10px; 
+}
+.pro{
+
+    display: flex;
+    flex-wrap: wrap; /* إضافة هذه الخاصية لتمكين التفاف العناصر */
+    gap: 30px;
+margin-top:50px;
+margin-left: 60px;
+  
+}
+.pro product{
+    width: 40%;
+    text-align: center;
+    background-color: #eee;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* إضافة الظل لجعل الصندوق بارز */
+    border-radius: 5px; /* إضافة حواف دائرية للصندوق */
+    transition: all 0.3s ease;
+   
+
+}
+.pro .product:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.9); /* تكبير الظل عند مرور الماوس */
+    transform: translateY(-5px);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product img{
+    width:250px;
+    height: 250px;
+    margin-left:20px;
+}
+.product h2{
+    font-size: 13px;
+    width: 300px; /* لضبط العرض ليكون داخل العنصر */
+ 
+}
+.product i{
+    margin-bottom: 40px;
+    margin-left:90%;
+    font-size: 30px;
+    color:white;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000;
+
+}
+.product i:hover{
+    color:red;
+}
+.last{
+    margin-top: 40px;
+padding-left: 470px;
+font-size: 30px;
+font-family: 'Dancing Script', cursive;
+}
+.last i{
+    margin-top:10px;
+    margin-left: 70px;
+
+}
+.last i:hover{
+    
+   
+    color: #D4AF37; 
+    cursor: pointer;
+   
+}
+.last h3:hover{
+   
+    color: #D4AF37; 
+    cursor: pointer;
+   
+}
+.active{
+    color: #D4AF37; 
+    cursor: pointer;
+
+}
+.active2{
+    
+    text-decoration: underline;
+    text-decoration-color: #D4AF37; 
+    cursor: pointer;
+    text-underline-offset: 10px; 
+}
+.pagination button{
+    width:50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 30px;
+    background-color:white;
+}
+.pagination button:hover{
+    cursor: pointer;
+    background-color:#D4AF37;
+}
+/*product end*/
+/*About start*/
+.About{
+   background: url('../image/back.jpg');
+   background-size: cover;
+    margin-top:700px;
+    height: 650px;
+    
+}
+.im{
+    width:500px;
+    height: 500px;
+    margin-top:10px;
+    margin-left:80px;
+    border-radius: 100%;
+    box-shadow: 0px 10px 15px #D4AF37; 
+}
+.im img{
+    border-radius: 100%; 
+    margin-top:40px;
+    margin-left:30px;
+}
+
+.About h2{
+    margin-top:20px;
+   color:white;
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+    font-style:oblique;
+}
+.one2 address{
+    color:white;
+    margin-bottom: 50px;
+    font-size:70px;
+   padding-left: 100px;
+   text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000;
+    font-family: 'Dancing Script', cursive;
+}
+.one2 p{
+    color:white;
+    font-size:20px;
+  
+   text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000;
+   
+}
+.one2 .three{
+    margin-top:50px;
+}
+/*About end*/
+/*contact start*/
+.contact{
+    height: 500px;
+}
+.contact i{
+border-radius: 100%;
+font-size: 80px;
+margin-top: 150px;
+}
+
+.contact address{
+   
+    font-size: 80px;
+    margin-top: 40px;
+    margin-left: 320px;
+    font-family: 'Pacifico', cursive;
+    color:#D4AF37;
+    text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000;
+    }
+   
+    .contact i:hover{
+        color:#D4AF37;
+        cursor: pointer;
+        text-shadow: 2px 2px 4px #000000, -2px -2px 4px #000000;
+        }
+/*contact end*/
+.my-modal{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    top:0;
+    left:0;
+}
+.my-modal .imge{
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 20px rgba(0,0,0,0.9);
+}
+.my-modal img{
+    width: 600px;
+}
+.left-butn, .ri-btn, .close {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+    z-index: 1000; /* تأكد من أن الأزرار تكون في مقدمة المودال */
+}
+
+.left-butn {
+    left: 10px;
+    top: 50%;
+}
+
+.ri-btn {
+    right: 10px;
+    top: 50%;
+}
+
+.close {
+    top: 10px;
+    right: 10px;
+}
+.d-none{
+    display: none !important;
+}
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    position: relative;
+   display: inline-block;
+    
+  }
+  .loader::before , .loader::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 48em;
+    height: 48em;
+    background-image:
+      radial-gradient(circle 10px,#D4AF37 100%, transparent 0),
+      radial-gradient(circle 10px, #D4AF37 100%, transparent 0),
+      radial-gradient(circle 10px,#D4AF37 100%, transparent 0),
+      radial-gradient(circle 10px, #D4AF37 100%, transparent 0),
+      radial-gradient(circle 10px, #D4AF37 100%, transparent 0),
+      radial-gradient(circle 10px, #D4AF37 100%, transparent 0),
+      radial-gradient(circle 10px,#D4AF37 100%, transparent 0),
+      radial-gradient(circle 10px, #D4AF37 100%, transparent 0);
+    background-position: 0em -18em, 0em 18em, 18em 0em, -18em 0em,
+                         13em -13em, -13em -13em, 13em 13em, -13em 13em;
+      background-repeat: no-repeat;
+    font-size: 0.5px;
+    border-radius: 50%;
+    animation: blast 1s ease-in infinite;
+  }
+  .loader::after {
+    font-size: 1px;
+    background:#D4AF37;
+    animation: bounce 1s ease-in infinite;
+  }
+  
+  @keyframes bounce {
+    0% , 100%{ font-size: 0.75px }
+    50% { font-size: 1.5px }
+  }
+  @keyframes blast {
+    0% , 40% {
+      font-size: 0.5px;
+    }
+    70% {
+      opacity: 1;
+      font-size: 4px;
+    }
+     100% {
+       font-size: 6px;
+      opacity: 0;
+    }
+  }
+
+  .loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .my-modal i:hover{
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
